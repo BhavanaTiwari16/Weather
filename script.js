@@ -41,7 +41,7 @@ search.addEventListener('click', () => {
 
             setTimeout(() => {
                 container.classList.remove('active');
-            }, 2500);
+            }, 1000);
 
             switch (json.weather[0].main) {
                 case 'Clear':
@@ -98,7 +98,7 @@ search.addEventListener('click', () => {
                 infoWeather.insertAdjacentElement("afterend",elCloneInfoWeather);
                 infoHumidity.insertAdjacentElement("afterend",elCloneInfoHumidity);
                 infoWind.insertAdjacentElement("afterend",elCloneInfoWind);
-            }, 2200);
+            }, 1000);
 
             const cloneInfoWeather=document.querySelectorAll('.info-weather.active-clone');
             const totalCloneInfoWeather=cloneInfoWeather.length;
@@ -119,7 +119,7 @@ search.addEventListener('click', () => {
                     cloneInfoWeatherFirst.remove();
                     cloneInfoHumidityFirst.remove();
                     cloneInfoWindFirst.remove();
-                }, 2200);
+                }, 1000);
             }
 
         }
